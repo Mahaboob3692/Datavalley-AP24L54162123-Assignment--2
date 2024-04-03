@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departmental Store Customer Information</title>
+  </head>
+  <body>
+    <h1>Customer Information Form</h1>
+    <form action="" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="phone">Contact Phone No.:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+        placeholder="XXXXXXXXXX"
+        required
+      /><br /><br />
+
+      <label for="preferred_day"
+        >Preferred Day(s) of Purchasing (select all that apply):</label
+      ><br />
+      <input
+        type="checkbox"
+        id="monday"
+        name="preferred_day[]"
+        value="monday"
+      />
+      Monday<br />
+      <input
+        type="checkbox"
+        id="tuesday"
+        name="preferred_day[]"
+        value="tuesday"
+      />
+      Tuesday<br />
+      <input
+        type="checkbox"
+        id="wednesday"
+        name="preferred_day[]"
+        value="wednesday"
+      />
+      Wednesday<br />
+      <input
+        type="checkbox"
+        id="thursday"
+        name="preferred_day[]"
+        value="thursday"
+      />
+      Thursday<br />
+      <input
+        type="checkbox"
+        id="friday"
+        name="preferred_day[]"
+        value="friday"
+      />
+      Friday<br />
+      <input
+        type="checkbox"
+        id="saturday"
+        name="preferred_day[]"
+        value="saturday"
+      />
+      Saturday<br />
+      <input
+        type="checkbox"
+        id="sunday"
+        name="preferred_day[]"
+        value="sunday"
+      />
+      Sunday<br /><br />
+
+      <label for="favourite_item">Favourite Item:</label>
+      <select id="favourite_item" name="favourite_item" required>
+        <option value="">Select an Item</option>
+        <option value="clothing">Clothing</option>
+        <option value="electronics">Electronics</option>
+        <option value="home_goods">Home Goods</option>
+        <option value="toys">Toys</option>
+        <option value="other">Other</option></select
+      ><br /><br />
+
+      <label for="suggestions">Suggestions:</label>
+      <textarea
+        id="suggestions"
+        name="suggestions"
+        rows="4"
+        cols="50"
+      ></textarea
+      ><br /><br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
