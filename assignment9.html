@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup form</title>
+  </head>
+  <body>
+    <form action="/signup" method="post">
+      <h2>Sign Up</h2>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Full Name"
+      /><br /><br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="gmail id"
+      /><br /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        placeholder="8 characters"
+      /><br /><br />
+      <label for="confirm_password">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+        placeholder="8 characters"
+        required
+      /><br /><br />
+      <label for="date_of_birth">Date Of Birth:</label>
+      <input
+        type="date"
+        id="date_of_birth"
+        name="date_of_birth"
+        required
+      /><br /><br />
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
+      <label for="photo">Insert your photo:</label>
+      <input type="file" id="photo" name="photo" /><br /><br />
+      <label for="resume">Insert your resume:</label>
+      <input type="file" id="resume" name="resume" /><br /><br />
+      <label for="security_question">Security Question:</label>
+      <select id="security_question" name="security_question">
+        <option value="">Select</option>
+        <option value="question1">Question 1:Date of birth place</option>
+        <option value="question2">Question 2:favourite place</option>
+        <option value="question3">Question 3:Bestfriend Name</option></select
+      ><br /><br />
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms">I agree terms and conditions</label><br /><br />
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
